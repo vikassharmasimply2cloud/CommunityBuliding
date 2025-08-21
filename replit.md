@@ -2,26 +2,33 @@
 
 ## Overview
 
-CommunityHub is a full-stack web application that helps people discover and connect with local communities based on shared interests. The platform allows users to browse, search, and filter community groups across various categories like sports, arts, hobbies, and professional networks. Built as a React single-page application with an Express.js backend, it provides a comprehensive community discovery experience with detailed community profiles, search functionality, and responsive design.
+CommunityHub is a React-based community directory application that helps people discover and connect with local communities based on shared interests. The platform allows users to browse, search, and filter community groups across various categories like sports, arts, hobbies, and professional networks. Built as a frontend-only single-page application optimized for Vercel deployment, it provides a comprehensive community discovery experience with detailed community profiles, search functionality, responsive design, and dark mode support.
 
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes (August 21, 2025)
+
+✓ Created complete frontend-only version for Vercel deployment
+✓ Built React application with TypeScript and Vite
+✓ Implemented search and filtering functionality with mock data
+✓ Added dark mode support with system preference detection
+✓ Created responsive design using Tailwind CSS
+✓ Integrated Radix UI components for accessibility
+✓ Added community detail modal with contact information
+✓ Optimized build configuration for production deployment
+
 ## System Architecture
 
 ### Frontend Architecture
 - **Framework**: React 18 with TypeScript for type safety and modern development
-- **Routing**: Wouter for lightweight client-side routing with support for parameterized routes
-- **State Management**: TanStack Query (React Query) for server state management, caching, and data fetching
-- **Styling**: Tailwind CSS with shadcn/ui component library for consistent, accessible UI components
+- **State Management**: Local React state with useMemo for efficient filtering and search
+- **Styling**: Tailwind CSS with Radix UI component library for consistent, accessible UI components
 - **Build Tool**: Vite for fast development and optimized production builds
-
-### Backend Architecture
-- **Runtime**: Node.js with Express.js framework for REST API endpoints
-- **Language**: TypeScript throughout the stack for consistency and type safety
-- **Storage**: Currently using in-memory storage with mock data, structured to easily migrate to database storage
-- **API Design**: RESTful endpoints for communities with search, filtering, and individual community retrieval
+- **Dark Mode**: CSS custom properties with localStorage persistence and system preference detection
+- **Data**: Mock community data structured for easy migration to backend API
+- **Deployment**: Optimized for static hosting on Vercel with zero configuration
 
 ### Data Storage Solutions
 - **Current**: In-memory storage with mock community data for development
