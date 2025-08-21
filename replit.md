@@ -30,23 +30,17 @@ Preferred communication style: Simple, everyday language.
 - **Data**: Mock community data structured for easy migration to backend API
 - **Deployment**: Optimized for static hosting on Vercel with zero configuration
 
-### Data Storage Solutions
-- **Current**: In-memory storage with mock community data for development
-- **Configured**: Drizzle ORM with PostgreSQL schema definitions ready for production database
-- **Database Schema**: Includes users and communities tables with proper relationships and constraints
-- **Migration Ready**: Drizzle configuration points to shared schema for easy database deployment
-
-### Authentication and Authorization
-- **Current State**: Basic user schema defined but authentication not yet implemented
-- **Prepared Structure**: User table with username/password fields ready for authentication implementation
-- **Session Management**: Package includes connect-pg-simple for PostgreSQL session storage when needed
+### Data Management
+- **Current**: Mock community data stored in frontend for demonstration
+- **Structure**: TypeScript interfaces matching real-world community data
+- **Future**: Ready for integration with backend API or headless CMS
 
 ### External Dependencies
-- **Database**: Neon Database serverless PostgreSQL (configured but not yet active)
 - **UI Components**: Radix UI primitives for accessible, unstyled components
 - **Icons**: Lucide React for consistent iconography
-- **Fonts**: Google Fonts integration (Inter, Geist Mono, DM Sans, others)
-- **Development**: Replit-specific tooling for development environment integration
-- **Validation**: Zod for runtime type validation and schema definitions
+- **Fonts**: Google Fonts integration (Inter family)
+- **Styling**: Tailwind CSS with custom color scheme and dark mode
+- **Build Tools**: Vite with TypeScript and React plugins
+- **Utilities**: Class Variance Authority for component variants
 
-The architecture follows a monorepo pattern with client, server, and shared code organization, making it easy to maintain type consistency across the full stack while keeping concerns properly separated.
+The architecture is now a clean frontend-only application optimized for static deployment, with all community data self-contained and ready for Vercel deployment.
